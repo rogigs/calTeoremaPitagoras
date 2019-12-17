@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Igor Gomes Soares">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/estilo.css">
+
+  <title>Pitágoras</title>
+</head>
+
+<body class="container bg-primary">
+  <main>
+    <header>
+      <div id="tela">
+        <div class="row">
+          <div class="col-4 pad">
+            <p class="float-right" id="resultadoCo">0</p>
+          </div>
+          <div class="col-4">
+            <figure>
+              <img src="imgs/triangulo.jpg" alt="Triângulo do Teorema de Putágoras">
+            </figure>
+          </div>
+          <div class="col-4 pad">
+            <p class="float-left" id="resultadoH">0</p>
+          </div>
+          <p id="resultadoCa">0</p>
+        </div>
+        <hr>
+        <div id="formula">
+          <p><b>h <sup>2</sup> = ca <sup>2</sup> + co <sup>2</sup></b></p>
+          <p><b id="mostraH"></b><sup><b>2</b></sup></sup><b> = </b><b id="mostraCa"></b><sup><b>2</b></sup><b> +
+            </b><b id="mostraCo"></b><sup><b>2</b></sup></b></p>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <article>
+
+        <!-- Variaveis-->
+        <div class="row">
+          <div class="col-4 ">
+            <button class="bg-info" id="buttonH" onclick="mudaCor('azul')">h</button>
+          </div>
+          <div class="col-4 ">
+            <button class="bg-danger" id="buttonCa" onclick="mudaCor('vermelho')">ca</button>
+          </div>
+          <div class="col-4">
+            <button class="bg-success" onclick="mudaCor('verde')">co</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Linha 1-->
+      <div class="row">
+        <div class="col-4 ">
+          <button class="bg-button" id="7" onclick="numeros('7')">7</button>
+        </div>
+        <div class="col-4 ">
+          <button class="bg-button" id="8" onclick="numeros('8')">8</button>
+        </div>
+        <div class="col-4">
+          <button class="bg-button" id="9" onclick="numeros('9')">9</button>
+        </div>
+      </div>
+      </article>
+
+      <!-- Linha 2-->
+      <div class="row">
+        <div class="col-4 ">
+          <button class="bg-button" id="4" onclick="numeros('4')">4</button>
+        </div>
+        <div class="col-4 ">
+          <button class="bg-button" id="5" onclick="numeros('5')">5</button>
+        </div>
+        <div class="col-4">
+          <button class="bg-button" id="6" onclick="numeros('6')">6</button>
+        </div>
+      </div>
+      </article>
+
+      <!-- Linha 3-->
+      <div class="row">
+        <div class="col-4 ">
+          <button class="bg-button" id="1" onclick="numeros('1')"> 1</button>
+        </div>
+        <div class="col-4 ">
+          <button class="bg-button" id="2" onclick="numeros('2')">2</button>
+        </div>
+        <div class="col-4">
+          <button class="bg-button" id="3" onclick="numeros('3')">3</button>
+        </div>
+      </div>
+      </article>
+
+      <!-- 0 -->
+      <div class="row">
+        <div class="col-4 ">
+          <button class="bg-button" id="0" onclick="numeros('0');">0</button>
+        </div>
+        <div class="col-4 ">
+          <button class="bg-button" id="ponto" onclick="numeros('.');">.</button>
+        </div>
+        <div class="col-4">
+          <button class="bg-button" id="ce" onclick="limpaCampos('ce')">ce</button>
+        </div>
+      </div>
+
+      <!-- 0=-->
+      <div class="row">
+        <div class="col-8">
+          <button class="bg-secondary" id="igual" onclick="calcula()">=</button>
+        </div>
+        <div class="col-4">
+          <button class="bg-secondary" id="3" onclick="limpaCampos('ac')">ac</button>
+        </div>
+      </div>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- Info -->
+  <footer class="bg-secondary">
+    <button class="bg-warning" id="info" data-toggle="modal" data-target="#modalExemplo">Info</button>
+
+    <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">
+              Teorema de Pitágoras
+            </h4>
+          </div>
+          <div class="modal-body">
+            <img src="imgs/triangulo.jpg">
+            <hr>
+            <p><b>h <sup>2</sup> = ca <sup>2</sup> + co <sup>2</sup></b></p>
+            <p><b>h = </b>Hipotenusa</p>
+            <p><b>ca = </b>Cateto Adjacente</p>
+            <p><b>co = </b>Cateto Oposto</p>
+            <p>Para calcular é necessário que dois lados sejam fornecidos <br> e que nenhum deles seja 0 ou menor que zero.</p>
+            <p>Os botões "h", "ca" e "co" correspondem aos lados, para <br>declarar o valor de um lado basta clicar algum
+              dele e, <br> em seguida, clicar nos botões referentes ao números <br>- esses terão as cores alteradas de acordo
+              com o lado.<br> Para finalizar clique no botão "=" para saber o resultado</p>
+            <p>Referentes aos botôes "ce" e "ac", o primeiro apaga apenas <br> o valor de um campo, enquanto o outro limpa todos os <br>campos</p>
+          </div>
+          <div class="modal-foooter">
+            <button type="button" class="btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <p id="apagado" class="apagar"></p>
+  <p id="apagado2" class="apagar">0</p>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+  <!-- Meu js -->
+  <script src="js/funcoes.js"></script>
+</body>
+
+</html>

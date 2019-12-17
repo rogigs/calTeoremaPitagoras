@@ -1,0 +1,109 @@
+*{
+    margin: 0 auto;
+}
+
+body{
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+main{
+    border: black groove 2px;
+    width: 60%;
+    height: 70%;
+    border-radius: 12px;
+    -webkit-border-radius: 12px; 
+    -moz-border-radius: 12px; 
+    text-align: center;
+    line-height: 10px;
+    box-shadow: 2px 2px 2px lightgray;
+}
+
+#tela{
+    border-bottom: black groove 2px;
+    min-height: 150px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px; 
+    -moz-border-radius: 10px 10px 0px 0px; 
+}
+
+img{
+    height: 120px;
+    width: 100%;
+}
+
+#formula{
+    min-height: 30px;
+}
+
+section{
+    height: 60%;
+    border-radius: 0px 0px 10px 10px;
+    -webkit-border-radius: 0px 0px 10px 10px; 
+    -moz-border-radius: 0px 0px 10px 10px; 
+    padding: 2%;
+}
+
+button{
+    height: 35px;
+    width: 100%;
+    border: 2px groove black;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px; 
+    -moz-border-radius: 10px 10px 10px 10px;
+    margin-bottom: 10%;
+}
+
+button:hover{
+    box-shadow: 1.5px 1.5px 1.5px black;
+}
+
+footer{
+    width: 20%;
+    height: 45px;
+    border-left: groove black 2px;
+    border-right: groove black 2px;
+    border-bottom: groove black 2px;
+    border-radius: 0px 0px 25px 25px;
+    -webkit-border-radius: 0px 0px 25px 25px; 
+    -moz-border-radius: 0px 0px 25px 25px;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-left: 1%;
+    box-shadow: 2px 2px 2px lightgray;
+}
+
+
+footer button{
+    height: 25px;
+    font-size: 12px;
+}
+
+.pad{
+    padding-top: 5%;
+}
+
+section{
+    background-color: steelblue;
+}
+
+.bg-button{
+    background-color:lightgray;
+}
+.bg-button:hover{
+    opacity: 0.8;
+}
+
+#apagado{
+    opacity: 0;
+}
+
+#apagado2{
+    opacity: 0;
+}
